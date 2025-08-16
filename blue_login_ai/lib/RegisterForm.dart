@@ -1,0 +1,65 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class RegisterForm extends StatelessWidget {
+  final TextEditingController usernameController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          TextField(
+            controller: usernameController,
+            decoration: InputDecoration(
+              labelText: 'User Name',
+              prefixIcon: Icon(Icons.person_outline),
+              border: OutlineInputBorder(),
+            ),
+          ),
+          SizedBox(height: 15),
+
+          TextField(
+            controller: passwordController,
+            obscureText: true,
+            decoration: InputDecoration(
+              labelText: 'Password',
+              prefixIcon: Icon(Icons.lock_outline),
+              border: OutlineInputBorder(),
+            ),
+          ),
+          SizedBox(height: 15),
+
+          TextField(
+            controller: emailController,
+            decoration: InputDecoration(
+              labelText: 'Email',
+              prefixIcon: Icon(Icons.email_outlined),
+              border: OutlineInputBorder(),
+            ),
+          ),
+          SizedBox(height: 20),
+
+          ElevatedButton(
+            onPressed: () {
+              print("Username: ${usernameController.text}");
+              print("Password: ${passwordController.text}");
+              print("Email: ${emailController.text}");
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue.shade900,
+              foregroundColor: Colors.white,
+              padding: EdgeInsets.symmetric(horizontal: 50, vertical: 12),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+            child: Text("Register"),
+          ),
+        ],
+      ),
+    );
+  }
+}
