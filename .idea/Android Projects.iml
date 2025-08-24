@@ -18,6 +18,12 @@
       <excludeFolder url="file://$MODULE_DIR$/blue_login_ai/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/blue_login_ai/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/blue_login_ai/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dribble_blue/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/dribble_blue/build" />
+      <excludeFolder url="file://$MODULE_DIR$/dribble_blue/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_batch_12/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_batch_12/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_batch_12/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
