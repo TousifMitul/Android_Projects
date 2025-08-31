@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       title: 'Batch-12',
       home: FlutterInput(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

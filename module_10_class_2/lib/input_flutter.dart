@@ -11,7 +11,7 @@ class FlutterInput extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Flutter input'),
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.blue,
         centerTitle: true,
       ),
       body: Padding(
@@ -77,7 +77,7 @@ class FlutterInput extends StatelessWidget {
               // width: double.infinity,
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.orange,
+                      backgroundColor: Colors.blue,
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10))),
