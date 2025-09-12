@@ -16,13 +16,14 @@ class Trend extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
       child: Container(
+        clipBehavior: Clip.hardEdge,
         width: double.infinity,
         height: 110,
         decoration: BoxDecoration(
           color: Colors.white,
           // border: Border.all(color: Colors.grey,width: 1),
           boxShadow: [
-            BoxShadow(color: Colors.grey, blurRadius: 10, spreadRadius: 5),
+            BoxShadow(color: Colors.grey, blurRadius: 5, spreadRadius: 3, offset: Offset(5, 2)),
           ],
           borderRadius: BorderRadius.circular(15),
         ),
@@ -39,6 +40,7 @@ class Trend extends StatelessWidget {
               ),
             ),
             Expanded(
+              flex: 2,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: Column(
@@ -46,9 +48,7 @@ class Trend extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      package.length > 16
-                          ? "${package.substring(0, 16)}.."
-                          : package,
+                      package,
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w400,

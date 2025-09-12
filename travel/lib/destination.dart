@@ -8,28 +8,21 @@ class Destination extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Positioned.fill(
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              image: DecorationImage(
-                fit: BoxFit.fill,
-                image: NetworkImage(image),
-              ),
+        Container(
+          clipBehavior: Clip.hardEdge,
+          width: double.infinity,
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(15)),
+          child: Positioned.fill(
+            child: Image.network(image,
+              fit: BoxFit.fill,
             ),
           ),
         ),
-        Positioned.fill(child: Container(color: Colors.black)),
-        Padding(
-          padding: const EdgeInsets.only(left: 10, bottom: 10),
-          child: Align(
-            alignment: Alignment.bottomLeft,
-            child: Text(
-              title,
-              style: TextStyle(color: Colors.white, fontSize: 17),
-            ),
-          ),
-        ),
+        Positioned.fill(child: Container( decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
+          color: Colors.black26,)
+        ),),
+        Positioned(left: 15, bottom: 15, child: Text(title,
+        style: TextStyle(fontSize: 20,color: Colors.white),),),
       ],
     );
   }
