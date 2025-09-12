@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
-
-import 'app.dart';
+import 'package:travel/app.dart';
 
 main(){
   runApp(MyApp());
